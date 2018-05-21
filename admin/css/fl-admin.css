@@ -1,0 +1,35 @@
+/* Floating Button Menu Admin Styles*/
+
+/*Form*/
+
+h3.fl-submit-mesage {
+    padding: 0 20px;
+    color: #0085ba;
+}
+.fl-wrap h1 {
+    padding: 20px;
+}
+#fl-btn-form {
+    padding: 0 20px;
+}
+#fl-btn-form .form-row {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+#fl-btn-form .label {
+    display: block;
+    margin-bottom: 10px;
+}
+#fl-btn-form label {
+    vertical-align: baseline;
+    margin-right: 10px;
+}
+#fl-btn-form .radio-row label {
+    margin-right: 15px;
+    vertical-align: baseline;
+}
+#fl-btn-form small {
+    display: block;
+    margin-bottom: 10px;
+}

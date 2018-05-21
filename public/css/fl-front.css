@@ -1,0 +1,128 @@
+/* Floating Button Menu Frontend Styles*/
+
+/*Horizontal / Vertical*/
+
+.fl-btn-menu {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    z-index: 9;
+}
+.fl-btn-menu.fl-left {
+    left: 1em;
+    right: unset;
+}
+.fl-btn-menu .fl-wrapper {
+    position: relative;
+}
+.fl-btn-menu a:focus {
+    outline: none;
+}
+.fl-btn-menu .fl-btn {
+    display: inline-block;
+    padding: 1em;
+    font-size: 16px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 35px;
+    opacity: 0.9;
+    -webkit-transition: ease 150ms;
+    -moz-transition: ease 150ms;
+    -ms-transition: ease 150ms;
+    -o-transition: ease 150ms;
+    transition: ease 150ms;
+}
+.fl-btn-menu .fl-btn:hover {
+    opacity: 1;
+}
+.fl-btn-menu.fl-bubble .fl-btn {
+    border-radius: 50%;
+}
+.fl-btn-menu .menu {
+    position: absolute;
+    height: 70px;
+    top: 0;
+    margin: 0;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    max-width: 0;
+    opacity: 0;
+}
+.fl-btn-menu.fl-horizontal.fl-opened .menu {
+    max-width: 100vw;
+}
+.fl-btn-menu.fl-opened .menu {
+    opacity: 1;
+}
+.fl-btn-menu.fl-horizontal.fl-left .menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+.fl-btn-menu.fl-vertical .menu {
+    max-height: 0;
+    height: auto;
+    top: unset;
+    max-width: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    width: 70px;
+}
+.fl-btn-menu.fl-vertical.fl-opened .menu {
+    max-height: 100vh;
+}
+.fl-btn-menu .menu li {
+    display: inline-block;
+    padding: 1em;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 30px;
+}
+.fl-btn-menu .menu li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.fl-btn-menu.fl-bubble li {
+    border-radius: 50%;
+}
+.fl-btn-opened-icon {
+    display: none;
+}
+
+/*TREE*/
+
+.fl-btn-menu.fl-tree .menu {
+    max-width: unset;
+    width: 70px;
+    height: 0;
+    display: block;
+    overflow: visible;
+    opacity: 1;
+}
+.fl-btn-menu.fl-tree .menu li {
+    position: absolute;
+}
+.fl-btn-menu.fl-tree .menu li {
+    right: 0;
+    z-index: -1;
+    opacity: 0;
+}
+.fl-btn-menu.fl-tree.fl-opened .menu li {
+    z-index: 9;
+    opacity: 1;
+}
